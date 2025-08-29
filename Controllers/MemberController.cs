@@ -1,7 +1,4 @@
-﻿// Controllers/MemberController.cs
-using Microsoft.AspNetCore.Mvc;
-//using LotusAscend.Contracts;
-//using LotusAscend.Interfaces;
+﻿using Microsoft.AspNetCore.Mvc;
 using static LotusAscend.Contracts.AuthDtos;
 
 [ApiController]
