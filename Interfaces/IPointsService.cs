@@ -1,5 +1,4 @@
-﻿// Interfaces/IPointsService.cs
-using LotusAscend.Contracts;
+﻿using LotusAscend.Contracts;
 using static LotusAscend.Contracts.PointsDtos;
 
 public interface IPointsService
