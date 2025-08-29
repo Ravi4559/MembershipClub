@@ -1,9 +1,6 @@
-﻿// Controllers/PointsController.cs
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-//using LotusAscend.Contracts;
-//using LotusAscend.Interfaces;
 using static LotusAscend.Contracts.PointsDtos;
 
 [ApiController]
