@@ -1,12 +1,7 @@
-// Program.cs
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-
-//using LotusAscend; // Your project's namespace
-//using LotusAscend.Interfaces;
-//using LotusAscend.Services;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -67,7 +62,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 
 
-// 1. Add CORS services right after builder.Services.AddControllers();
+// 5. Add CORS services right after builder.Services.AddControllers();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -78,11 +73,10 @@ builder.Services.AddCors(options =>
     });
 });
 
-// ... (keep the rest of the services configuration)
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -91,14 +85,13 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// 2. Add CORS middleware here
 app.UseCors("AllowAll");
 
-// Add Authentication and Authorization middleware
+
 app.UseAuthentication();
 app.UseAuthorization();
 
-// 3. Add UseDefaultFiles() before UseStaticFiles()
+
 app.UseDefaultFiles(); // This makes index.html the default page
 app.UseStaticFiles();
 
