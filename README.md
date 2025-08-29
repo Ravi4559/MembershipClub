@@ -1,4 +1,4 @@
-## Membership Club - Customer Loyalty Rewards API
+# Membership Club - Customer Loyalty Rewards API
 This repository contains the source code for the Membership Club application, a simple customer loyalty and rewards program. It features a secure ASP.NET Core Web API backend that handles user registration, authentication, and points management, along with a clean, responsive frontend built with vanilla HTML, CSS, and JavaScript.
 
 
