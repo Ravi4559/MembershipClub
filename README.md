@@ -1,4 +1,4 @@
-#### Membership Club - Customer Loyalty Rewards API
+## Membership Club - Customer Loyalty Rewards API
 This repository contains the source code for the Membership Club application, a simple customer loyalty and rewards program. It features a secure ASP.NET Core Web API backend that handles user registration, authentication, and points management, along with a clean, responsive frontend built with vanilla HTML, CSS, and JavaScript.
 ### Core Workflow
 The application follows a simple and secure workflow for customer interaction:
@@ -74,35 +74,33 @@ Example Correction:
   "Audience": "https://localhost:7263"
 }
 
-### Create the Database:
+- Create the Database:
+-- Open the Package Manager Console in Visual Studio (View -> Other Windows -> Package Manager Console).
+-- Run the following commands one by one to create the database and its tables based on the Entity Framework models:
 
-Open the Package Manager Console in Visual Studio (View -> Other Windows -> Package Manager Console).
+- Add-Migration InitialCreate
+-- Update-Database
 
-Run the following commands one by one to create the database and its tables based on the Entity Framework models:
-
-Add-Migration InitialCreate
-Update-Database
-
-2. Frontend Setup
+### 2. Frontend Setup
 The frontend files (intex.html, style.css, app.js) are located in the wwwroot folder and are served automatically by the backend.
 
-Configure the API URL:
+- Configure the API URL:
 
 In the Solution Explorer, open wwwroot/app.js.
 
-Find the API_BASE_URL constant.
+- Find the API_BASE_URL constant.
 
 Update its value to match the https URL you configured in appsettings.json and found in launchSettings.json.
 
 // In wwwroot/app.js
 const API_BASE_URL = 'https://localhost:7263'; // <-- Make sure this URL is correct!
 
-3. Run the Application
+### 3. Run the Application
 Press F5 or the green "Play" button in Visual Studio to build and run the project.
 
-Your browser will open, likely to the Swagger UI page (e.g., https://localhost:7263/swagger). This is expected.
+Your browser will open, likely to the Swagger UI page (e.g., https://localhost:7263/swagger). -> This is expected.
 
-Navigate to the root URL of your application to see the frontend:
+- Navigate to the root URL of your application to see the frontend:
 https://localhost:7263
 
-You can now test the full registration, login, and points management workflow!
+### You can now test the full registration, login, and points management workflow!
