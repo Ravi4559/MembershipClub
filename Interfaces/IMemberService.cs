@@ -1,6 +1,4 @@
-﻿// Interfaces/IMemberService.cs
-//using LotusAscend.Contracts;
-using static LotusAscend.Contracts.AuthDtos;
+﻿using static LotusAscend.Contracts.AuthDtos;
 
 public interface IMemberService
 {
