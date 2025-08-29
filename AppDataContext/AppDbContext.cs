@@ -1,5 +1,4 @@
-﻿// AppDataContext/AppDbContext.cs
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using LotusAscend.Models;
 
 public class AppDbContext : DbContext
@@ -14,7 +13,7 @@ public class AppDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        // Configure one-to-one relationship between Member and Otp
+    
         modelBuilder.Entity<Member>()
             .HasOne(m => m.Otp)
             .WithOne(o => o.Member)
