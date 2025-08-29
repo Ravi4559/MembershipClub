@@ -1,10 +1,8 @@
-﻿// Services/MemberService.cs
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-//using LotusAscend.Interfaces;
 using LotusAscend.Models;
 using static LotusAscend.Contracts.AuthDtos;
 
@@ -33,7 +31,7 @@ public class MemberService : IMemberService
 
         var newMember = new Member { MobileNumber = request.MobileNumber };
 
-        // Create a dummy OTP [cite: 17, 18]
+        // Create a dummy OTP 
         var otp = new Otp
         {
             Code = "1234",
@@ -47,7 +45,7 @@ public class MemberService : IMemberService
 
         return newMember.Id;
     }
-    // (Continuing inside the MemberService class)
+    
     public async Task<AuthResponse?> VerifyOtpAsync(VerifyRequest request)
     {
         var member = await _context.Members.Include(m => m.Otp)
