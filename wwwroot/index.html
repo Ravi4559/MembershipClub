@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Rewards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Loyalty Program</h1>
+
+        <div id="loggedOutView">
+            <div class="card">
+                <h2>Step 1: Register</h2>
+                <form id="registerForm">
+                    <input type="text" id="registerMobile" placeholder="Enter Mobile Number" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2>Step 2: Verify OTP</h2>
+                <form id="verifyForm">
+                    <input type="text" id="verifyMobile" placeholder="Enter Mobile Number" required>
+                    <input type="text" id="otp" placeholder="Enter OTP (use '1234')" required>
+                    <button type="submit">Verify & Login</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="loggedInView" class="hidden">
+            <div class="card">
+                <h2 id="welcomeMessage"></h2>
+                <button id="logoutButton">Logout</button>
+            </div>
+
+            <div class="card">
+                <h2>Add Points</h2>
+                <form id="pointsForm">
+                    <input type="number" id="purchaseAmount" placeholder="Purchase Amount (e.g., 500)" required>
+                    <button type="submit">Add Points</button>
+                </form>
+            </div>
+             <div class="card">
+                <h2>Check Balance</h2>
+                <button id="checkPointsButton">View My Points</button>
+            </div>
+        </div>
+        
+        <div id="messageArea" class="message"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
