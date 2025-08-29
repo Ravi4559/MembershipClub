@@ -1,5 +1,10 @@
 ## Membership Club - Customer Loyalty Rewards API
 This repository contains the source code for the Membership Club application, a simple customer loyalty and rewards program. It features a secure ASP.NET Core Web API backend that handles user registration, authentication, and points management, along with a clean, responsive frontend built with vanilla HTML, CSS, and JavaScript.
+
+### API Testing with Postman
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://raviravindra-4559-6716984.postman.co/workspace/8f9aea06-aafc-4bfb-8c66-21b7645234cf/collection/48026263-e72ef8d9-7d82-430c-b0f9-a40308418141?action=share&source=copy-link&creator=48026263)
+
+
 ### Core Workflow
 The application follows a simple and secure workflow for customer interaction:
 
