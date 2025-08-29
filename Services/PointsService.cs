@@ -1,7 +1,5 @@
-﻿// Services/PointsService.cs
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using LotusAscend.Contracts;
-//using LotusAscend.Interfaces;
 using LotusAscend.Models;
 using static LotusAscend.Contracts.PointsDtos;
 
